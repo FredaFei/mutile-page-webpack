@@ -17,7 +17,7 @@
     npm run build [project name] [project name]
 ```
 
-> 目录结构
+### 目录结构
 
 ```
   |__ ...
@@ -37,7 +37,7 @@ ____
     npm run build [project name] [project name] separate
 ```
 
-> 目录结构
+### 目录结构
 
 ```
   |__ ...
@@ -62,7 +62,7 @@ ____
     npm run build-all
 ```
 
-> 目录结构
+### 目录结构
 
 ```
   |__ ...
