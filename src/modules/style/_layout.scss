@@ -1,0 +1,24 @@
+$type: padding margin;
+$direct: top left bottom right;
+
+@each $pm in $type {
+  $style: 'm';
+  @if ($pm == 'padding') {
+    $style: 'p';
+  }
+  @each $dir in $direct {
+    $d: 't';
+    @if ($dir == 'left') {
+      $d: 'l';
+    } @else if($dir == 'right') {
+      $d: 'r';
+    } @else if($dir == 'bottom') {
+      $d: 'b';
+    }
+    @for $i from 1 through 10 {
+      .#{$style}#{$d}#{$i*10} {
+        @include result($pm, $dir, $i);
+      }
+    }
+  }
+}

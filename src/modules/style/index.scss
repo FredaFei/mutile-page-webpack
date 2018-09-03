@@ -1,0 +1,36 @@
+$unit: 1rem;
+@import '_mixins';
+@import '_layout';
+@import '_transition';
+@import '_normalize';
+@import '_reset';
+
+html,
+body {
+  height: 100%;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Helvetica, STHeiti STXihei, Microsoft YaHei, Tohoma, Arial
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper-flex {
+  @include flex(flex-start,flex-start);
+  flex-direction: column;
+  .wrapper-hd,
+  .wrapper-bd,
+  .wrapper-ft {
+    width: 100%;
+  }
+  .wrapper-bd {
+    flex: 1;
+    position: relative;
+  }
+}

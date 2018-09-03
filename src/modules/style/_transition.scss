@@ -1,0 +1,70 @@
+.slide-left-enter-active,
+.slide-left-leave-active{
+  transition: all .4s ease;
+}
+
+.slide-left-enter,
+.slide-left-leave-to{
+  transform: translateX(-100%);
+}
+.slide-up-enter-active,
+.slide-up-leave-active{
+  transition: all .4s ease;
+}
+
+.slide-up-enter,
+.slide-up-leave-to{
+  transform: translateY(100%);
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity linear .3s;
+}
+
+.fade-in-enter,
+.fade-in-leave-to {
+  opacity: 0;
+}
+
+.mask-enter-active{
+  transition: opacity .2s;
+}
+.mask-leave-active{
+  transition: opacity .6s;
+}
+
+.mask-enter,
+.mask-leave-to {
+  opacity: 0;
+}
+
+.dialog-enter-active {
+  animation: dialog-in .5s;
+}
+
+.dialog-leave-active {
+  animation: dialog-out .3s;
+}
+
+@keyframes dialog-in {
+  0% {
+    transform: scale(1.185);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dialog-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+}

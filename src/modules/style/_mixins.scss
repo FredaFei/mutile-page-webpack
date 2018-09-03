@@ -1,0 +1,9 @@
+@mixin result($type:margin,$direct: top,$val: 0) {
+  #{$type}-#{$direct}: $val * $unit * .1;
+}
+
+@mixin flex($jc: center,$ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
