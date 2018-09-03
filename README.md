@@ -25,11 +25,12 @@
   |__ |__ static
   |__ |__ |__ js
   |__ |__ |__ css
-  |__ |__ [project name]
-  |__ |__ [project name]
+  |__ |__ [project name].html
+  |__ |__ [project name].html
   |
   ...
 ```
+____
 
 ```
     // 每个项目单独打包
@@ -53,6 +54,8 @@
   |__ |__ |__ index.html
   |__ ...
 ```
+
+____
 
 ```
     // 打包所有项目，并每个项目单独打包
