@@ -1,18 +1,18 @@
 <template>
   <div id="main">
-    <h1 class="mt20 ml10 mr100" >{{message}}</h1>
+    <h1 class="mt20 ml10 mr100">{{message}}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  data(){
+  data() {
     return {
       message: 'page_2'
     }
   },
-  created(){
+  created() {
     this.$util.setSize()
   }
 }
@@ -27,7 +27,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-h1{
+
+h1 {
   color: red;
 }
 </style>

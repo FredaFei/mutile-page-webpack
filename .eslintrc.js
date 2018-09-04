@@ -21,8 +21,15 @@ module.exports = {
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
-    'space-before-blocks': ['error', 'never'],
-    'space-before-function-paren': ['error', 'never'],
+    // 'space-before-blocks': ['error', 'never'],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'always'
+      }
+    ],
     'arrow-spacing': [1, { before: true, after: true }],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
